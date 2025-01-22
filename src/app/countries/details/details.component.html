@@ -1,0 +1,57 @@
+<section class="country-details-container">
+    <nav class="back-navigation">
+        <a routerLink="/" class="back-button">
+            <button class="back-btn font-medium">
+                <img width="20" src="/right-arrow.svg" alt="Back Button Icon" />
+                <span>Back</span>
+            </button>
+        </a>
+    </nav>
+
+    @if(country$ | async; as countryArray) {
+    @if(countryArray.length > 0) {
+    <article class="country-details">
+        <figure class="country-flag">
+            <img [src]="countryArray[0].flags.svg" alt="Flag of Belgium" />
+        </figure>
+
+        <div class="country-info">
+            <header>
+                <h1 class="country-name font-bold">{{countryArray[0].name.common}}</h1>
+            </header>
+
+            <div class="country-data">
+                <section class="general-info">
+                    <p><strong>Native Name:</strong> {{countryArray[0].name.official}}</p>
+                    <p><strong>Population:</strong> {{countryArray[0].population | number}}</p>
+                    <p><strong>Region:</strong> {{countryArray[0].region}}</p>
+                    <p><strong>Sub Region:</strong> {{countryArray[0].subregion}}</p>
+                    <p><strong>Capital:</strong> {{countryArray[0].capital[0]}}</p>
+                </section>
+                <section class="additional-info">
+                    <p><strong>Top Level Domain:</strong> {{countryArray[0].tld[0]}}</p>
+                    <p><strong>Currencies:</strong> {{getCurrencies(countryArray[0].currencies)}}</p>
+                    <p><strong>Languages:</strong> {{getLanguages(countryArray[0].languages)}}</p>
+                </section>
+            </div>
+
+            @if(countryArray[0].borders.length > 0) {
+            <footer class="border-countries">
+                <h4>Border Countries:</h4>
+                <ul class="border-country-list">
+                    @for(border of countryArray[0].borders; track border) {
+                    <li class="border-country">{{border}}</li>
+                    }
+                </ul>
+            </footer>
+            }
+        </div>
+    </article>
+    }
+
+    } @else {
+    <div class="loading">
+        <p>Loading...</p>
+    </div>
+    }
+</section>

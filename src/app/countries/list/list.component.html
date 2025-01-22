@@ -1,0 +1,13 @@
+<app-search-bar></app-search-bar>
+<app-filter></app-filter>
+<section class="country-list">
+    @if(countries$ | async; as countries) {
+    @for (country of countries; track $index) {
+    <app-card [country]="country"></app-card>
+    }
+    } @else {
+    <div class="loading">
+        <p>Loading...</p>
+    </div>
+    }
+</section>

@@ -1,59 +1,53 @@
-# RestCountriesApi
+# Frontend Mentor - REST Countries API with color theme switcher solution
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Development server
+## Table of contents
 
-To start a local development server, run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
 
-```bash
-ng serve
-```
+## Overview
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### The challenge
 
-## Code scaffolding
+Users should be able to:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- See all countries from the API on the homepage
+- Search for a country using an `input` field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color scheme between light and dark mode *(optional)*
 
-```bash
-ng generate component component-name
-```
+### Screenshot
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Desktop Design
 
-```bash
-ng generate --help
-```
+![desktop1](https://github.com/user-attachments/assets/a299f408-6ccd-4298-a51f-275c22e8da02)
+![desktop2](https://github.com/user-attachments/assets/872e8919-8491-467f-978d-438ce67a0eb3)
+![desktop3](https://github.com/user-attachments/assets/e99e070f-e45c-4650-8d10-a182f9f54bca)
 
-## Building
+Mobile Design
 
-To build the project run:
+![mobile1](https://github.com/user-attachments/assets/9877a818-082b-4347-bbbf-c4da2022125d)
+![mobile2](https://github.com/user-attachments/assets/8e8c51e6-f502-41f9-a4e8-3a08b98c8e2b)
+![mobile3](https://github.com/user-attachments/assets/519fa9d9-f135-4655-b673-1e7c6df18fe8)
 
-```bash
-ng build
-```
+### Links
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Solution URL: [URL](https://github.com/Mohammed-Mounir/multi-step-form)
+- Live Site URL: [URL](https://mohammed-mounir.github.io/multi-step-form/)
 
-## Running unit tests
+## My process
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Built with
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Angular](https://angular.dev/) - JS Framework
+- [RxJS](https://rxjs.dev/) - JS library
+- Mobile-first workflow
+- SCSS
