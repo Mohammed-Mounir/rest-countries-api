@@ -1,7 +1,7 @@
 <div class="filter">
     <button (click)="onShowList()">
         <p>{{selectedRegion || 'Filter By Region'}}</p>
-        <img [attr.data-showList]="showList" width="12" src="/arrow-down.svg" alt="select" />
+        <img [attr.data-showList]="showList" width="12" src="arrow-down.svg" alt="select" />
     </button>
     @if(showList) {
     <ul>
