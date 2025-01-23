@@ -8,9 +8,14 @@
   background-color: var(--elements);
   border-radius: 0.3rem;
   width: 100%;
+  min-width: 15rem;
   height: 60px;
   margin-top: 3rem;
   color: var(--text);
+
+  @include desktop {
+    margin-top: 0;
+  }
 
   & > button {
     color: var(--text);

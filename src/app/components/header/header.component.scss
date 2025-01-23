@@ -1,6 +1,12 @@
 header {
-  padding: 3rem 2rem;
+  padding: 2rem 3rem;
   box-shadow: var(--shadow);
+  background-color: var(--elements);
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
   h1,
   p {
     color: var(--text);
@@ -21,7 +27,7 @@ header {
       gap: 0.7rem;
 
       p {
-        font-size: 1.3rem;
+        font-size: 1rem;
       }
 
       img {

@@ -1,5 +1,7 @@
-<app-search-bar></app-search-bar>
-<app-filter></app-filter>
+<section class="search-filter">
+    <app-search-bar></app-search-bar>
+    <app-filter></app-filter>
+</section>
 <section class="country-list">
     @if(countries$ | async; as countries) {
     @for (country of countries; track $index) {
