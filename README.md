@@ -28,8 +28,8 @@ Users should be able to:
 
 Desktop Design
 
-![desktop1](https://github.com/user-attachments/assets/a299f408-6ccd-4298-a51f-275c22e8da02)
-![desktop2](https://github.com/user-attachments/assets/872e8919-8491-467f-978d-438ce67a0eb3)
+![desktop1](https://github.com/user-attachments/assets/bd99a7bc-6618-422d-8ed0-874d0d76aaba)
+![desktop2](https://github.com/user-attachments/assets/93509a2f-d6f2-4fbb-8cac-697c99e2758c)
 ![desktop3](https://github.com/user-attachments/assets/e99e070f-e45c-4650-8d10-a182f9f54bca)
 
 Mobile Design
